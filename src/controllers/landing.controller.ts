@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import path from 'path'
+import path from 'path';
 
 class landingController{
     static renderHomePage(req: Request, res: Response) {

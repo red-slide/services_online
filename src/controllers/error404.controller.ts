@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import path from 'path'
+import path from 'path';
 
 class error404Controller{
     static renderError404Page(req: Request, res: Response) {

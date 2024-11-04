@@ -1,6 +1,6 @@
 {
   "name": "express-studies",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "",
   "type": "module",
   "main": "app.js",
@@ -9,7 +9,7 @@
     "dev": "clear && nodemon --exec 'npm run build' --watch './src' --ext 'js, ts, html, style'",
     "build": "rimraf ./build && npx tsc && npm run tailwind && npm run copyfiles && cls || clear && echo 'FINISH BUILDING' && nodemon ./build/app.js",
     "tsc": "npx tsc",
-    "tailwind": "npx tailwindcss -i src/view/assets/tailwind.css -o src/view/assets/global.css",
+    "tailwind": "npx tailwindcss -i src/view/public/assets/tailwind.css -o src/view/public/assets/global.css",
     "copyfiles": "copyfiles -u 1 'src/**/*.html' 'src/**/*.css' ./build"
   },
   "keywords": [],

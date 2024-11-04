@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import path from 'path'
+import path from 'path';
 
 class loginController{
     static renderLoginPage(req: Request, res: Response) {

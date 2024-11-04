@@ -17,7 +17,7 @@ headers.use('*', (req: Request, res: Response, next: NextFunction) => {
         // Prevents technologies used on the server from being exposed.
         'X-Powered-By'
     ]
-    headersToRemove.forEach((value) => {res.removeHeader(value)})
+    headersToRemove.forEach((value) => {res.removeHeader(value)});
 
     next();
 })
