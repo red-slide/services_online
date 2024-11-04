@@ -9,7 +9,7 @@ class error404Controller{
             'Pragma':'no-cache'
         })
         .status(200)
-        .sendFile(path.resolve('src/view/public/error404/index.html'));
+        .sendFile(path.resolve('build/view/public/error404/index.html'));
     };
 }
 

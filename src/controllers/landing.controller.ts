@@ -11,7 +11,7 @@ class landingController{
             'Keep-Alive':'timeout=5'
         })
         .status(200)
-        .sendFile(path.resolve('src/view/public/landing/index.html'));
+        .sendFile(path.resolve('build/view/public/landing/index.html'));
     };
 }
 

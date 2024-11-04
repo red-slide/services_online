@@ -2,11 +2,15 @@ import express, {Application} from 'express';
 import env from './config/env.js';
 import router from './routes/router.js';
 import httpSecurityHeaders from './config/httpSecurityHeaders.js';
+import path from 'path'
 
 function main(): void {
     const app: Application = express();
     
     app.use(httpSecurityHeaders)
+
+    app.use(express.static(path.resolve('build/view/assets')))
+    
     app.use(router);
     
     // start server

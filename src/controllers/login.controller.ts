@@ -11,7 +11,7 @@ class loginController{
             'Pragma':'no-cache'
         })
         .status(200)
-        .sendFile(path.resolve('src/view/public/login/index.html'));
+        .sendFile(path.resolve('build/view/public/login/index.html'));
     };
 }
 
