@@ -15,8 +15,8 @@ To install the project dependencies, follow the steps below:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/repository-name.git
-   cd repository-name
+   git clone https://github.com/red-slide/express-studies.git
+   cd express-studies
 
 2. **Install dependencies**:
    ```bash
