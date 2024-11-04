@@ -1,7 +1,7 @@
 import express, {Application} from 'express';
 import env from './config/env.js';
 import router from './routes/router.js';
-import httpSecurityHeaders from './config/httpSecurityHeaders.js';
+import httpSecurityHeaders from './middlewares/httpSecurityHeaders.js';
 import path from 'path'
 
 function main(): void {
