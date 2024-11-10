@@ -1,4 +1,4 @@
-# Express Studies
+# services online
 
 This project aims to study back-end and front-end development with Node.js, Express, TypeScript, and eventually Tailwind CSS.
 
@@ -15,8 +15,8 @@ To install the project dependencies, follow the steps below:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/red-slide/express-studies.git
-   cd express-studies
+   git clone https://github.com/red-slide/services_online.git
+   cd services_online
 
 2. **Install dependencies**:
    ```bash
