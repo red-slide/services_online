@@ -2,7 +2,9 @@
 export default {
   content: ["src/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:['Poppins-Thin', 'Poppins-Light', 'Popping-Medium', 'Poppins-SemiBold', 'Poppins-Bold']
+    },
   },
   plugins: [],
 }

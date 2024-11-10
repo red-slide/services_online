@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
-import landingRoute from './public/landing.route.js';
-import loginRoute from './public/login.route.js';
+import landingRoute from './public/home.route.js';
+import loginRoute from './public/services.route.js';
 import error404Route from './public/error404.route.js';
 
 const router: Router = Router();

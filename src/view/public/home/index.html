@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="shortcut icon" href="./logo.webp" type="image/x-icon">
+    <title>services online</title>
+</head>
+<body>
+
+    <header class="bg-gray-50 z-30  w-full h-14 fixed border-b border-gray-200 bg-opacity-40 select-none" style="backdrop-filter: blur(50px)">
+        <span id="logo" class="z-40 absolute w-8 h-8 top-2/4 left-10 text-red-600 font-bold bg-gray-50 rounded-3xl rounded-tl-none rounded-bl-none border-2 border-red-600 flex justify-center items-center -translate-x-1/2 -translate-y-1/2 after:absolute after:left-6 after:border-2 after:bg-red-600 after:border-red-600 after:text-gray-50 after:w-8 after:h-8 after:rounded-3xl after:rounded-tr-none after:flex after:justify-center after:items-center after:rounded-br-none after:font-bold">S</span>
+        <style>
+            #logo::after{
+                content: 'O';
+            }
+        </style>
+
+        <ul class="z-40 w-full h-full">
+            <li class="w-full h-full flex justify-center text-center text-gray-600 font-bold text-lg">
+                <a href="#home" class="h-full w-28 flex items-center justify-center hover:text-red-600">Home</a>
+                <a href="#about" class="h-full w-28 flex items-center justify-center hover:text-red-600">About</a>
+                <a href="#contacts" class="h-full w-28 flex items-center justify-center hover:text-red-600">Contacts</a>
+            </li>
+        </ul>
+        <div id="services-btn" class="group z-40 absolute w-28 h-10 border-2 border-red-600 right-10 top-1/2 -translate-y-1/2 flex justify-center items-center hover:border-red-800 hover:border-2 after:bg-red-600">
+            <a href="/services" class="z-40 text-red-600 font-bold text-center w-full h-full flex items-center justify-center group-hover:text-gray-50">
+                Services
+            </a>
+        </div>
+        <style>
+            @keyframes fillBtn {
+                0%{width: 0%;}
+                100%{width: 100%;}
+            }
+
+            #services-btn::after{
+                content: '';
+                z-index: 30;
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: width 0s;
+            }
+
+            #services-btn:hover::after {
+            animation: fillBtn 0.3s linear forwards;
+            transition: width 0.3s linear;
+            }
+
+        </style>
+    </header>
+
+    <section id="home" class="z-0 bg-gray-50 w-full flex flex-col gap-3 justify-center items-center border-b-2 border-gray-300 h-[98vh] select-none">
+        <h1 class="z-20 text-5xl text-red-600 font-bold">
+            Services<br>Online
+        </h1>
+        <p class="z-20 flex justify-center items-center text-gray-50 text-xl font-bold p-3 bg-red-600">
+            For everything you need.
+        </p>
+
+        <div id="triangleDiv" class="absolute overflow-hidden w-full h-[98%]">
+            <span class="triangle left-[5%]  border-red-400" style="animation-delay: 1s;"></span>
+            <span class="triangle left-[17%] border-red-400" style="animation-delay: 4.3s;"></span>
+            <span class="triangle left-[30%] border-red-400" style="animation-delay: 0s;"></span>
+            <span class="triangle left-[45%] border-red-400" style="animation-delay: 2.5s;"></span>
+            <span class="triangle left-[60%] border-red-400" style="animation-delay: 4.7s;"></span>
+            <span class="triangle left-[75%] border-red-400" style="animation-delay: 1.2s;"></span>
+            <span class="triangle left-[95%] border-red-400" style="animation-delay: 3.6s;"></span>
+
+
+            <span class="triangle left-[5%]  border-red-400" style="animation-delay: 9s;"></span>
+            <span class="triangle left-[17%] border-red-400" style="animation-delay: 12.3s;"></span>
+            <span class="triangle left-[30%] border-red-400" style="animation-delay: 8s;"></span>
+            <span class="triangle left-[45%] border-red-400" style="animation-delay: 10.5s;"></span>
+            <span class="triangle left-[60%] border-red-400" style="animation-delay: 12.7s;"></span>
+            <span class="triangle left-[75%] border-red-400" style="animation-delay: 8.2s;"></span>
+            <span class="triangle left-[95%] border-red-400" style="animation-delay: 11.6s;"></span>
+
+            <style>
+                @keyframes triangleMoveUp {
+                    0%{top: 105%; opacity: 100%;}
+                    50%{opacity: 70%;}
+                    80%{opacity: 20%;}
+                    100%{top: -40%; opacity: 0%;}
+                }
+
+                .triangle {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    top: -50%;
+                    border-left-width: 25px;
+                    border-left-color: transparent;
+                    border-right-width: 25px;
+                    border-right-color: transparent;
+                    border-bottom-width: 40px;
+                    transform: translateX(-50%);
+                    animation: triangleMoveUp 15s linear infinite;
+                }
+            </style>
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-50 w-full h-[98vh]">
+    </section>
+
+    <section id="contacts" class="bg-gray-950 w-full h-[75vh]">
+    </section>
+
+    <span id="arrow" class="bg-red-600 after:bg-red-600"></span>
+    <style>
+    @keyframes arrowMove {
+            0%{top:84%;} 50%{top: 85%;} 100%{top: 84%;}
+        }
+    #arrow {
+        position: fixed;
+        left: 50%;
+        top: 84%;
+        width: 30px;
+        height: 5px;
+        transform: rotate(-135deg) translate(-50%, -50px);
+        z-index: 10;
+        animation: arrowMove 1s infinite linear;
+    }
+    #arrow::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 30px;
+    }
+    </style>
+
+    <script>
+    </script>
+
+</body>
+</html>

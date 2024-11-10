@@ -3,7 +3,11 @@ import express, { Router } from 'express';
 
 const staticFiles: Router = Router();
 
-// Configura arquivos estáticos para serem servidos a partir de "/assets/public"
-staticFiles.use('/public/assets', express.static(path.resolve('build/view/public/assets')));
+//global assets
+staticFiles.use('/', express.static(path.resolve('build/view/assets/styles')));
+
+staticFiles.use('/', express.static(path.resolve('build/view/assets/fonts')));
+
+staticFiles.use('/', express.static(path.resolve('build/view/assets/imgs')));
 
 export default staticFiles;

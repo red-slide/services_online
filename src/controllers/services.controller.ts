@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import path from 'path';
 
-class loginController{
+class servicesController{
     static renderLoginPage(req: Request, res: Response) {
         res.set({
             'Content-Type':'text/html',
@@ -11,8 +11,8 @@ class loginController{
             'Pragma':'no-cache'
         })
         .status(200)
-        .sendFile(path.resolve('build/view/public/login/index.html'));
+        .sendFile(path.resolve('build/view/public/services/index.html'));
     };
 }
 
-export default loginController;
+export default servicesController;
